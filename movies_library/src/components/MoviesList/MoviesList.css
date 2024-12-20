@@ -1,0 +1,77 @@
+.movies-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    /* padding: 20px; */
+  }
+  
+.movies-list {
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  gap: 1em; /* Space between grid items */
+  /* grid-template-columns: repeat(3, 1fr); Default to 3 items per row */
+  padding: 10px; 
+}
+
+.movies-container h2 span{
+  font-weight: 400;
+}
+
+
+
+.sortForm{
+  display: grid;
+  gap: 5px;
+  padding: 0 10px;
+  grid-template-columns: 6fr 3fr 3fr;
+}
+.sortForm div:first-child {
+  grid-column: 2 / 3; /* Places it in the second column */
+}
+
+.third-column:nth-child(2) {
+  grid-column: 3 / 4; /* Places it in the third column */
+}
+
+.movieListMessage{
+  margin:auto;
+  text-align: center;
+  margin-top: 200px;
+  width:fit-content
+}
+
+@media (max-width:992px) {
+  .movies-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width:992px) {
+  .movies-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width:768px) {
+  .sortForm{
+    grid-template-columns: 3fr 3fr;
+  }
+  .sortForm div:first-child {
+    grid-column: 1 / 2; /* Places it in the second column */
+  }
+  
+  .third-column:nth-child(2) {
+    grid-column: 2 / 3; /* Places it in the third column */
+  }
+}
+@media (max-width:430px) {
+  .sortForm{
+    grid-template-columns: 1fr;
+  }
+  .movies-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width:400px) {
+  .movies-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}  

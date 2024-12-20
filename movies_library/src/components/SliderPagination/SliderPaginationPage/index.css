@@ -1,0 +1,23 @@
+.pageContainer .activePage{
+    border: 1px solid #3e77aa;
+    
+}
+.pageContainer{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.pageContainer button{
+    cursor: pointer;
+    border:1px solid #e9e9e9;
+    background-color: white;
+    border-radius: 3px;
+    width: 35px;
+    height: 30px;
+}
+.pageContainer button:hover{
+    border: 1px solid #3e77aa;
+}
+

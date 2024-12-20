@@ -1,0 +1,81 @@
+.genrespicker .selected-genres {
+    margin-top: 10px;
+}
+.genrespicker .genresContainer{ 
+    display: flex;
+    align-items: center;
+}
+
+.genrespicker .genresContainer button{
+    padding: 15px;
+    margin-left: 20px;
+    align-self: flex-start;
+    /* border: none; */
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.genrespicker{
+    padding: 5px 0 10px;
+}
+
+.genrespicker .inputGenre{
+    width: 100%;
+    max-width: 230px;
+} 
+/* .genrespicker .inputGenre.errorState{
+    border: 1px solid #d82c2c;
+    border-radius: 4px;
+}  */
+
+
+.selected-genres{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.selected-genre {
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.selected-genre span{
+    position: relative;
+    top: -1px;
+}
+
+.selected-genre button {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 3px 8px 4px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.selected-genre button:hover {
+    background-color: #ff7875;
+} 
+
+@media (max-width:768px) {
+    .genrespicker .inputGenre{
+        max-width: 180px;
+    } 
+}
+
+@media (max-width:320px) {
+    .genrespicker .inputGenre{
+        max-width: 150px;
+    } 
+}

@@ -1,0 +1,40 @@
+.movieForm{
+    display: grid;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    grid-template-columns: 1fr 2fr;
+}
+.movieForm .FormImage .imageInput{
+    width: 300px;
+    aspect-ratio: 1 / 1.5;
+    margin: auto;
+}
+
+.movieForm .FormImage{
+    padding: 0 10px;
+}
+
+.movieForm .imageContainer{
+    cursor: pointer;
+}
+.movieForm .rightContainer{
+    padding: 0 10px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media (max-width:768px) {
+    .movieForm{
+        grid-template-columns: 1fr;
+    }
+    .movieForm .FormImage{
+        
+        margin-bottom: 50px;
+    }
+    .movieForm .FormImage p:last-child{
+        margin: auto;
+        width: fit-content;
+    }
+}
+

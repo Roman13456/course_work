@@ -1,0 +1,116 @@
+.movie-metadata{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 10px;
+    display: grid;
+    box-sizing: border-box;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+.movie-poster-img{
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    border: 1px grey solid;
+}
+.votingContainer{
+    display: flex;
+    align-items: center;
+}
+.votingContainer .voteAvgScore{
+    margin-right: 20px;
+}
+.reccomendedMovies{
+    display: grid;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+
+.reccomendedMovies h2{
+    grid-column: 1/5;
+}
+.userRatingContainer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+/* .userRatingContainer p{
+    margin-right: 5px;
+    border-radius: 5px;
+    background-color: aqua;
+} */
+.rateForm button[type="submit"]{
+    width: 100%;
+    margin-top: 40px!important;
+}
+
+
+.editRatingBtn img{
+    width: 100%;
+}
+.editRatingBtn{
+    cursor: pointer;
+    margin-left: 10px;
+    /* border: 1px solid black; */
+    border: none;
+    /* border-radius: ; */
+    background-color: transparent;
+    padding: 0;
+    max-width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    /* height: fit-content; */
+}
+.ratingAndEditContainer{
+    align-items: center;
+    padding: 5px 10px;
+    color: white;
+    display: flex;
+    background-color: #1976d2;
+    border-radius: 10px;
+}
+.ratingAndEditContainer p{
+    position: relative;
+    top: -2px;
+    font-size: 20px;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+
+    
+    .movie-poster-img{
+        justify-self: center;
+    }
+    .movie-metadata{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) 
+{   
+    .votingContainer{
+       flex-wrap: wrap;
+    }
+    .reccomendedMovies{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .reccomendedMovies h2{
+        grid-column: 1/3;
+    }
+}
+
+@media (max-width:370px) {
+    .reccomendedMovies{
+        grid-template-columns: 1fr;
+    }
+    
+    .reccomendedMovies h2{
+        grid-column: 1/2;
+    }
+}

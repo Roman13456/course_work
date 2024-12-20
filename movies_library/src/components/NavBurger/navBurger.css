@@ -1,0 +1,132 @@
+.navigation{
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 0;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 60px 60px 1fr ;
+}
+.navBurger{
+    width: 42px;
+    /* margin-top: 10px;
+    margin-left: 10px; */
+    justify-self: center;
+    align-self: center;
+    /* margin-left: 150px; */
+    box-sizing: border-box;
+    position: relative;
+    height: 42px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px rgb(146, 146, 146) solid;
+}
+.navBurger.disabled .menuIcon{
+    display: none;
+}
+
+.navBurger .list.disabled{
+    display: none;
+}
+
+.navBurger.disabled{
+    cursor:auto;
+}
+
+.navBurger:hover{
+    border: 1px black solid;
+}
+
+
+.searchForm{
+    margin-right:0 ;
+}
+
+.navBurger img{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+.navBurger .list {
+    position: absolute;
+    z-index: 99;
+    top: -2px;
+    left: -1px;
+    border-radius: 8px 0 10px 0;
+    /* width: 200px; */
+    /* height: 200px; */
+    backdrop-filter: blur(8px); /* Apply blur to background */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    background-color: rgba(0, 0, 0, 0.5); /* Add transparency */
+}
+
+
+
+
+.navBurger .list a{
+    color: white;
+    width: fit-content;
+    font-size: 25px;
+    transition: 0.1s;
+    text-decoration: none;
+    white-space: nowrap; /* Prevents line breaks */
+}
+
+.navBurger .list a:hover{
+    font-size: 29px;
+}
+
+.navBurger .list button{
+    position: absolute;
+    cursor: pointer;
+    overflow: hidden;
+    right: 20px;
+    top: 19px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+
+
+
+
+.navBurger .list button .crossIco{
+    position: relative;
+    transition: 0.1s;
+    /* filter:  brightness(0.9) ; */
+    max-width: 25px;
+    width: 100%;
+}
+
+.navBurger .list button:hover .crossIco{
+    filter:  brightness(1) ;
+    max-width: 29px;
+}
+
+
+
+.navBurger .LinkWrapper{
+    height: 40px;
+    grid-column: 1/2;
+}
+.navBurger .list .container{
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 250px 28px;
+    gap: 20px;
+}
+
+
+@media (max-width:500px) {
+    .navBurger .list{
+        width: calc(100vw - 20px);
+        border-radius: 8px 8px 8px 8px;
+    }
+    .navBurger .list .container{
+        width: auto
+    }
+}

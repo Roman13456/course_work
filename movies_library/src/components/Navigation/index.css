@@ -1,0 +1,35 @@
+.searchForm input {
+    padding: 10px;
+}
+.searchForm .MuiOutlinedInput-root{
+    border-radius: 8px 0 0 8px;
+}
+
+
+.searchForm .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-width: 1px; /* Keeps the border width the same on hover */
+}
+
+.searchForm .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-width: 1px; /* Keeps the border width the same on focus */
+}
+
+.searchForm button[type="submit"]{
+    width: 43px;
+    height: 43px;
+    border-radius: 0 8px 8px 0;
+    padding: 6px;
+    min-width:auto;
+}
+.searchForm button[type="submit"] img{
+    width: 30px;
+}
+.searchForm{
+    display: grid;
+    box-sizing: border-box;
+    max-width: 950px;
+    padding: 0 10px;
+    margin: auto;
+    width: 100%;
+    grid-template-columns: 6fr 0fr;
+}

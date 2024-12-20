@@ -1,0 +1,6 @@
+.FavoritesChangerContainer img{
+    width: 45px;
+    display: block;
+    cursor: pointer;
+    height: 45px;
+}

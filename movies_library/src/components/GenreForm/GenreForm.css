@@ -1,0 +1,17 @@
+.checkboxContainer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.genresExculsionForm{
+    padding: 0 10px;
+}
+.checkboxContainer .checkboxItem{
+    padding: 0 10px 0 0;
+    border: 1px gray solid;
+    border-radius: 7px;
+}
+.checkboxContainer .checkboxItem label{
+    margin: 0;
+}

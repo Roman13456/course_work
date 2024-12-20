@@ -1,0 +1,57 @@
+.loginForm input{
+    background-color: white;    
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width:500px;
+    height: 400px;
+    margin:auto;
+    padding:20px 10px; 
+    @media (max-width:500px) {
+        margin: 0 10px;
+    }
+    @media (min-width:767px) {
+        padding: 20px;
+    }
+    border-radius:10px; 
+    border:2px solid #65a2e9;
+    background-color:#f1ebeb;
+}
+
+
+
+.loginForm.signupForm{
+    height: 500px;
+}
+.loginForm.emailConfirm{
+    height: 275px;
+}
+.loginForm .formTitle{
+    text-align:center;
+}
+.loginForm .formTitle.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.loginForm .hideContents{
+    display: none;
+}
+.formContainerInputs{
+    height: 100%;
+    /* position: relative; */
+    flex-direction:column;
+    display:flex;
+    /* height: 280px; */
+}
+.spinerAndInputContainerPositioned{
+    height: 100%;
+}
+.signupForm .formContainerInputs{
+    /* height: 350px; */
+}
+

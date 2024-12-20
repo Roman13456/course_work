@@ -1,0 +1,9 @@
+.starsContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.starsContainer img{
+    cursor: pointer;
+    width: 100%;
+    max-width: 30px;
+}

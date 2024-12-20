@@ -1,0 +1,149 @@
+.admin-panel-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.admin-sort-form{
+    /* display: flex; */
+}
+.admin-panel-container .overflow1line{
+    overflow: hidden;        /* Hide overflowed text */
+    white-space: nowrap;     /* Prevent wrapping to a new line */
+    text-overflow: ellipsis; /* Show ellipsis when text overflows */
+}
+.admin-panel-container .overflow2line{
+    display: -webkit-box;       /* Flexbox for WebKit browsers */
+    -webkit-box-orient: vertical; /* Set flex direction */
+    overflow: hidden;           /* Hide overflowed text */
+    text-overflow: ellipsis;    /* Show ellipsis for overflowed content */
+    white-space: normal;        /* Allow text wrapping */
+    -webkit-line-clamp: 2;      /* Limit to 2 lines */
+}
+
+
+
+.admin-panel-container .createMovieBtn{
+    max-width: 230px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.00938em;
+}
+
+
+.admin-panel-container .admin-movies-table{
+  padding: 0 10px;
+
+}
+.admin-panel-container .header{
+    width: fit-content;
+    margin: auto;
+    border: 2px solid black;
+    display: grid;
+    border-radius: 5px 5px 0 0 ;
+    /* gap: 10px; */
+    grid-template-columns: 40px minmax(120px, 150px)  minmax(110px, 330px) minmax(110px, 250px) minmax(60px, 90px)  minmax(70px, 80px) minmax(110px, 120px) minmax(100px, 120px) ;
+}
+.admin-panel-container .header p{
+    margin: 0;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+    
+}
+.admin-panel-container .header p:first-child{
+  border-left: none;
+}
+.admin-panel-container .header p:last-child{
+  border-right: none;
+}
+
+.admin-panel-container .adminItem{
+    border: 1px solid lightblue;
+    width: fit-content;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 30px minmax(110px, 140px) minmax(100px, 320px) minmax(100px, 240px) minmax(50px, 80px)  minmax(60px, 70px) minmax(100px, 110px) minmax(100px, 120px);
+}
+.admin-panel-container .adminItem .centerContent{
+    justify-self: center;
+}
+
+.admin-sort-form{
+    display: grid;
+    gap: 5px;
+    padding: 0 10px 10px;
+    grid-template-columns: 6fr 3fr 3fr;
+  }
+  .admin-sort-form div:first-child {
+    grid-column: 2 / 3; /* Places it in the second column */
+  }
+  
+  .third-column:nth-child(2) {
+    grid-column: 3 / 4; /* Places it in the third column */
+  }
+
+  .actionBtnsContainer{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .actionBtnsContainer button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+    
+  }
+  .actionBtnsContainer img{
+    width: 100%;
+  }
+  .actionBtnsContainer .editBtn{
+    height: 58px;
+    width: 52px;
+  }
+  .actionBtnsContainer .editBtn img{
+    position: relative;
+    top: -1px;
+  }
+  .actionBtnsContainer .editBtn img:hover {
+    filter: invert(0.3) brightness(1.2) grayscale(0.8);
+  }
+
+  .actionBtnsContainer .removeBtn img:hover{
+    filter: brightness(0.85);
+  }
+  .actionBtnsContainer .removeBtn{
+    width: 43px;
+    height: 43px;
+  }
+
+
+  
+  @media (max-width:768px) {
+    .admin-sort-form{
+      grid-template-columns: 3fr 3fr;
+    }
+    .admin-panel-container .createMovieBtn{
+      max-width: 50%;
+      grid-column: 1 / 3;
+    }
+    .admin-sort-form div:first-child {
+      grid-column: 1 / 2; /* Places it in the second column */
+    }
+    
+    .third-column:nth-child(2) {
+      grid-column: 2 / 3; /* Places it in the third column */
+    }
+  }
+  @media (max-width:430px) {
+    .admin-panel-container .createMovieBtn{
+      max-width: 100%;
+      grid-column: 1 / 2;
+    }
+    .admin-sort-form{
+      grid-template-columns: 1fr;
+    }
+  }

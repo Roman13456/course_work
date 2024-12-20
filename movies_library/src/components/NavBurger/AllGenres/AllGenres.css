@@ -1,0 +1,86 @@
+.allGenres .genresContainer{
+    width: 500px;
+    height: 240px;
+    position: absolute;
+    backdrop-filter: blur(8px); /* Apply blur to background */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    background-color: rgba(0, 0, 0, 0.5); /* Add transparency */
+    z-index: 99999;
+    top: -1.2px;
+    left: -1px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: grid;
+    border-radius: 8px 0 8px 8px;
+    gap: 5px 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.allGenres .genresContainer .genreItem{
+    height: 25px;
+}
+
+.allGenres .genresContainer p{
+    margin: 0;
+    cursor: pointer;
+    justify-self: center;
+    /* color: rgb(233, 232, 232); */
+    color: white;
+    transition: 0.1s;
+    text-decoration: none;
+}
+
+.allGenres .genresContainer p:hover{
+    color: white;
+    font-size:larger;
+}
+
+.allGenres{
+    justify-self: center;
+    cursor: pointer;
+    align-self: center;
+    height: 40px;
+    border: 1px solid grey;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    border-radius: 8px;
+    background-color: #1976d2;;
+}
+
+
+.allGenres h5{
+    position: relative;
+    font-weight: 400;
+    top: -1px;
+    margin: 0;
+    color: white;
+    font-size: 18px;
+}
+
+.allGenres:hover{
+    filter: brightness(0.9);
+}
+
+.allGenres.disabled{
+    cursor: unset;
+}
+
+.allGenres.disabled:hover{
+    filter:unset;
+}
+
+@media (max-width:767px) {
+    .allGenres .genresContainer{
+        border-radius: 8px 8px 8px 8px;
+        width: calc(100vw - 19px);
+        margin-left: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        height: 330px;
+        top: 50px;
+    }
+    .allGenres{
+        position: static;
+    }
+}
